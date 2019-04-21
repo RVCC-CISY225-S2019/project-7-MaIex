@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="print" href="Print.css">
+
+
+</head>
+
+<body>
+    <!-- skip link -->
+    <a href="#main" class="skip">Skip to main</a>
+    <!-- start of header -->
+    <header id="header" class="header">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i id="symbol-toggle" class="fas fa-bars"></i>
+            </span>
+            <a href="#header" class="logo">
+                <div class="logo-container">
+                    <img class="logo" src="images/logo-1913689.svg" alt="Company Logo">
+                    <h1 class="page-title">Web Dev I</h1>
+                </div>
+            </a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#main" class="nav-links">Main</a>
+                </li>
+                <li>
+                    <a href="#about-me" class="nav-links">About Me</a>
+                </li>
+                <li>
+                    <a href="#pictures" class="nav-links">My Photos</a>
+                </li>
+                <li>
+                    <a href="#story" class="nav-links">A Story</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-links">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end of header -->
+    <!-- start of main content -->
+    <!--    why put tabindex of -1 on skiplink target -  https://axesslab.com/skip-links/ -->
+    <main id="main" tabindex="-1" class="main">
+        <!-- start of bio section -->
+        <section class="hero">
+            <div class="content">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/Marc-lrg.jpg" />
+                    <source media="(min-width: 960px)" srcset="images/Marc-med.jpg" />
+                    <source media="(min-width: 640px)" srcset="images/Marc-small.jpg" />
+                    <img src="images/Marc-xsmall.jpg" alt="This is a picture of me.">
+                </picture>
+                <p class="my-name">Marc Ali</p>
+                <p class="my-location">BRANCHBURG, NJ</p>
+            </div>
+        </section>
+        <section id="about-me" class="about-me">
+            <div class="content">
+                <div class="about-content">
+                    <p class="iama">I want to be...</p>
+                    <p class="my-info">a computer programmer!</p>
+                    <p class="iama">My favorite way to work is...</p>
+                    <p class="my-info">with headphones on without much noise to focus.</p>
+                    <p class="iama">In my free time, I like to...</p>
+                    <p class="my-info">Go to amusement parks, work out at the gym, sing, and play video games.
+                </div>
+            </div>
+        </section>
+        <!-- end of bio section -->
+        <div class="back-to-top">
+            <a href="#">Back to Top</a>
+        </div>
+        <!-- start of photo gallery -->
+        <section id="pictures" class="gallery">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/smoothie-lrg.jpg" />
+                    <source media="(min-width: 960px)" srcset="images/smoothie-med.jpg" />
+                    <source media="(min-width: 640px)" srcset="images/smoothie-small.jpg" />
+                    <img src="images/smoothie-xsmall.jpg" alt="A Strawberry Banana Smoothie.">
+                </picture>
+                <figcaption>A Strawberry Banana Smoothie.</figcaption>
+            </figure>
+            <hr class="mobile first">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/burger-lrg.jpg" />
+                    <source media="(min-width: 960px)" srcset="images/burger-med.jpg" />
+                    <source media="(min-width: 640px)" srcset="images/burger-small.jpg" />
+                    <img src="images/burger-xsmall.jpg" alt="A Cheese Burger.">
+                </picture>
+                <figcaption>A Cheese Burger.</figcaption>
+            </figure>
+            <hr class="mobile first">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/fries-lrg.jpg" />
+                    <source media="(min-width: 960px)" srcset="images/fries-med.jpg" />
+                    <source media="(min-width: 640px)" srcset="images/fries-small.jpg" />
+                    <img src="images/Fries-xsmall.jpg" alt="Fries">
+                </picture>
+                <figcaption>French Fries.</figcaption>
+            </figure>
+        </section>
+        <!-- end of photo gallery -->
+        <div class="back-to-top">
+            <a href="#">Back to Top</a>
+        </div>
+        <hr class="mobile-first">
+        <!-- start of Sherlock Holmes story -->
+        <article id="story" class="story">
+            <h1>Evelina</h1>
+            <h2>
+                Heroin and Jazz
+            </h2>
+            <div id="story-body" class="story-body">
+                <p>THIS insatiable Captain, if left to himself, would not, I believe, rest, till he had tormented Madame Duval into a fever. He seems to have no delight but in terrifying or provoking her; and all his thoughts apparently turn upon inventing such methods as may do it most effectually.</p>
+
+                <p>She had her breakfast again in bed yesterday morning: but during ours, the Captain, with a very significant look at Sir Clement, gave us to understand, that he thought she had now rested long enough to bear the hardships of a fresh campaign.</p>
+
+                <p>His meaning was obvious: and, therefore, I resolved to endeavour immediately to put a stop to his intended exploits. When breakfast was over, I followed Mrs. Mirvan out of the parlour, and begged her to lose no time in pleading the cause of Madame Duval with the Captain. "My love," answered she, "I have already expostulated with him; but all I can say is fruitless, while his favourite, Sir Clement, contrives to urge him on."</p>
+
+                <p>"Then I will go and speak to Sir Clement," said I, "for I know he will desist if I request him."</p>
+
+                <p>"Have I care, my dear!" said she, smiling: "it is sometimes dangerous to make requests to men who are too desirous of receiving them."</p>
+
+                <p>"Well, then, my dear Madam, will you give me leave to speak myself to the Captain?"</p>
+
+                <p>"Willingly: nay, I will accompany you to him."</p>
+
+                <p>I thanked her, and we went to seek him. He was walking in the garden with Sir Clement. Mrs. Mirvan most obligingly made an opening for my purpose, by saying, "Mr. Mirvan, I have brought a petitioner with me."</p>
+
+                <p>"Why, what's the matter now?" cried he.</p>
+
+                <p>I was fearful of making him angry, and stammered very much, when I told him, I hoped he had no new plan for alarming Madame Duval.</p>
+
+                <p>"New plan!" cried he; "why, you don't suppose the old one would do again, do you? Not but what it was a very good one, only I doubt she wouldn't bite."</p>
+
+                <p>"Indeed, Sir," said I, "she had already suffered too much; and I hope you will pardon me, if I take the liberty of telling you, that I think it my my duty to do all in my power to prevent her being again so much terrified."</p>
+
+                <p>A sullen gloominess instantly clouded his face, and, turning short from me, he said, I might do as I pleased, but that I should much sooner repent than repair my officiousness.</p>
+            </div>
+        </article>
+        <!-- end of Sherlock Holmes story -->
+    </main>
+    <!-- end of main content -->
+    <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+    <hr class="mobile-first">
+    <!-- start of contact form -->
+    <section id="contact" class="form-container">
+        <h1>Get in Touch</h1>
+        <br class="mobile-first"><br class="mobile-first">
+        <div>
+            <form method="POST" action="https://formspree.io/G00255487@stu.raritanval.edu">
+                <fieldset>
+                    <legend>Please Feel Free To Contact Marc</legend>
+                    <label for="email">Email</label>
+                    <br>
+                    <input id="email" type="email" name="email">
+                    <br><br>
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea id="message" name="message"></textarea>
+                    <br><br><br>
+                    <fieldset>
+                        <legend>I would like a reply from Marc</legend>
+                        <input type="radio" id="reply-yes" name="reply" value="yes" checked>
+                        <label for="reply-yes">Yes</label>
+                        <br><br>
+                        <input type="radio" id="reply-no" name="reply" value="no">
+                        <label for="reply-no">No</label>
+                    </fieldset>
+                    <br><br>
+                    <button type="submit">Send Message</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <!-- end of contact form -->
+    <!-- start of footer -->
+    <footer>
+        <br class="mobile-first"><br class="mobile-first">
+        <p> &copy; Marc Ali</p>
+    </footer>
+    <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+    <!-- end of footer -->
+    <br class="mobile-first"><br class="mobile-first">
+    <!-- start of javascript for nav toggle -->
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+        let symbolToggle = document.getElementById('symbol-toggle');
+
+
+        navBarToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            if (symbolToggle.classList.contains('fa-bars')) {
+                symbolToggle.classList.remove('fa-bars');
+                symbolToggle.classList.add('fa-times');
+            } else {
+                symbolToggle.classList.remove('fa-times');
+                symbolToggle.classList.add('fa-bars');
+            }
+        });
+
+    </script>
+    <!-- end of javascript for nav toggle -->
+</body>
+
+</html>
