@@ -12,7 +12,6 @@ select,
 button {
     width: 150px;
     margin: 0;
-
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -28,7 +27,6 @@ textarea {
 
 legend {
     font-size: 1.2rem;
-
 }
 
 button:focus {
@@ -37,32 +35,32 @@ button:focus {
     color: #FFF;
 }
 
-/*  grids */
-
+/* grids */
 main {
     display: grid;
 }
 
 /* hero content */
-
 .content {
     display: grid;
 }
 
 /* about content */
-
 .about-content {
     display: grid;
 }
 
-/*  gallery */
-
+/* gallery */
 .gallery {
     display: grid;
 }
 
-/*  article */
 
+figure {
+    display: grid;
+}
+
+/* article */
 article {
     display: grid;
 }
@@ -73,21 +71,19 @@ article {
 }
 
 /* footer */
-
 footer {
     display: grid;
 }
 
-/*  layout */
-
-/*   mobile is the default layout*/
-
+/* layout */
+/* mobile is the default layout*/
 /* tablet layout >=48rem (768px) */
-
 @media screen and (min-width: 48rem) {
+    .mobile-first {
+        display: none;
+    }
 
-    /*      hero content */
-
+    /* hero content */
     .content {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -96,25 +92,24 @@ footer {
     .content p,
     .about-content {
         grid-column: 2/3;
-
     }
 
-    /*	about content */
-
-    /*	gallery */
-    
+    /* about content */
+    /* gallery */
     figure {
         grid-template-columns: 1fr 1fr;
-        grid-column: 1/2;
+        align-items: center;
+        justify-items: center;
     }
 
     figcaption {
-        grid-template-columns: 1fr 1fr;
         margin-left: 1rem;
         grid-column: 2/2;
     }
 
-    /*	article */
+    /* article */
+
+
     article,
     .form-container {
         grid-template-columns: 1fr 1fr 1fr;
@@ -126,25 +121,18 @@ footer {
         grid-column: 2/3;
     }
 
-    /*	form */
+    /* form */
     form {
         grid-column: 2/3;
     }
 }
 
 /* wide screen layout >=64rem (1024px) */
-
 @media screen and (min-width: 64rem) {
 
-    .mobile-first {
-        display: none;
-    }
-
-    /*      hero content */
-
-    /*	about content */
-
-    /*	gallery */
+    /* hero content */
+    /* about content */
+    /* gallery */
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -153,16 +141,6 @@ footer {
         grid-column: 1/4;
     }
 
-    figure {
-        grid-column: 1/2;
-    }
-
-    figcaption {
-        grid-column: 2/2;
-    }
-
-    /*	article */
-
-    /*	form */
-
+    /* article */
+    /* form */
 }
